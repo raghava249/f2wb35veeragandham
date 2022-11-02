@@ -6,9 +6,9 @@ block content
   div.container-fluid 
     div.row 
         each item, index in results
-            div.col-sm-2(onclick=`Emp(${index})`) Emp Name: #{item["Employee_Name"]} <br> Emp Salary: #{item["Employee_Salary"]} <br> Emp Id: #{item["Employee_Id"]} <br> Emp Department: #{item["Employee_Department"]}
+            div.col-sm-2(onclick=`buy(${index})`) Emp Name: #{item["Employee_Name"]} <br> Emp Salary: #{item["Employee_Salary"]} <br> Emp Id: #{item["Employee_Id"]} <br> Emp Department: #{item["Employee_Department"]}
 
   script.
-    function Emp (index) {
-      alert("Employee Details " + index)
+    function buy (index) {
+      alert("Employee index" + index)
     }
